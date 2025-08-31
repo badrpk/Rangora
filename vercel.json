@@ -1,6 +1,11 @@
 {
   "redirects": [
-    { "source": "https://www.rangoons.online/(.*)", "destination": "https://rangoons.online/$1", "permanent": true }
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.rangoons.online" }],
+      "destination": "https://rangoons.online/:path*",
+      "permanent": true
+    }
   ],
   "headers": [
     { "source": "/static/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },

@@ -30,3 +30,4 @@ wa-bot/auth/
 
 rangoons.db-shm
 rangoons.db-wal
+.vercel
